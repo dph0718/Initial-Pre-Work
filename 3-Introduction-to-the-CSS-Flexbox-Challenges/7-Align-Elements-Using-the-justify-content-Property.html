@@ -1,0 +1,32 @@
+<!-- Learned: 
+    - The 'justify-content' property is used to specify how elements are arranged within a column or row 
+    - A value of:
+        'flex-start' aligns items to the left of a row, the top of a column
+        'flex-end' alignes items to the right of a row, the top of a column
+        'space-between' pushes the first and last elements of the row or column to the start and end
+        'space-around' evenly spaces out all elements in the row or column-->
+
+    <style>
+        #box-container {
+          background: gray;
+          display: flex;
+          height: 500px;
+          justify-content: center;
+        }
+        #box-1 {
+          background-color: dodgerblue;
+          width: 25%;
+          height: 100%;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 25%;
+          height: 100%;
+        }
+      </style>
+      
+      <div id="box-container">
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+      </div>

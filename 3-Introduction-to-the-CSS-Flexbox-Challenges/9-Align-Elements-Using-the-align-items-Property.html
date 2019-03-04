@@ -1,0 +1,40 @@
+<!-- Learned: 
+    - The 'align-items' property aligns the items in a flex container along its cross axis:
+        for a column, 'align-items' determines the horizontal alignment of each child element
+        for a row, 'align-items' determines the vertical alignment of each child element
+    - A value of:  
+        'center' orients the items to the center of the flex container
+        'stretch' stretches the elements to fit the entire flex container
+        'baseline' aligns the elements to the text's baseline
+        'flex-start' aligns the elements to the top of a row container, to the left of a column container
+        'flex-end' aligns the elemnents to the bottom of a row containter, to the right of a column container-->
+
+<style>
+    #box-container {
+        background: gray;
+        display: flex;
+        height: 500px;
+        align-items: center;
+    }
+
+    #box-1 {
+        background-color: dodgerblue;
+        width: 200px;
+        font-size: 24px;
+    }
+
+    #box-2 {
+        background-color: orangered;
+        width: 200px;
+        font-size: 18px;
+    }
+</style>
+
+<div id="box-container">
+    <div id="box-1">
+        <p>Hello</p>
+    </div>
+    <div id="box-2">
+        <p>Goodbye</p>
+    </div>
+</div>

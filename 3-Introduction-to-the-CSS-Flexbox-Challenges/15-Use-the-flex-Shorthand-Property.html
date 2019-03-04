@@ -1,0 +1,30 @@
+<!-- Learned: 
+    - A shorter way to write flex properties is using flex shorthand:
+        The 'flex' property is defined by 3 values separated by spaces
+            'flex-grow' is the property the first number
+            'flex-shrink' is the property of the second number
+            'flex-basis' is the proprty of the third number, and needs units. -->
+
+<style>
+    #box-container {
+        display: flex;
+        height: 500px;
+    }
+
+    #box-1 {
+        background-color: dodgerblue;
+        flex: 2 2 150px;
+        height: 200px;
+    }
+
+    #box-2 {
+        background-color: orangered;
+        flex: 1 1 150px;
+        height: 200px;
+    }
+</style>
+
+<div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+</div>
