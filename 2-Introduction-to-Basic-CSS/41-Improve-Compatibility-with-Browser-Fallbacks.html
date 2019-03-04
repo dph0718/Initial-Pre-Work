@@ -1,0 +1,18 @@
+<!-- Learned: 
+    - Some browsers (IE) don't support CSS variables.
+    - Defining the CSS property with a valid value _before_ defining it with a variable will make sure
+        the browser doesn't use its default color, but instead, the color you've assigned before it couldn't read the variable -->
+
+<style>
+    :root {
+        --red-color: red;
+    }
+
+    .red-box {
+        background: red;
+        background: var(--red-color);
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<div class="red-box"></div>

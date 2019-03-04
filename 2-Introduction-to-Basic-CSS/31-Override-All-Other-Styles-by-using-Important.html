@@ -1,0 +1,24 @@
+<!-- Learned: 
+    - adding "!important" to a CSS property's value will override other styles.
+    - "!important" should be sparingly used; for example, if a CSS library is overriding defined styles -->
+
+<style>
+    body {
+        background-color: black;
+        font-family: monospace;
+        color: green;
+    }
+
+    #orange-text {
+        color: orange;
+    }
+
+    .pink-text {
+        color: pink !important;
+    }
+
+    .blue-text {
+        color: blue;
+    }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
