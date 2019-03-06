@@ -1,0 +1,40 @@
+<!-- Learned: 
+    -The 'grid-column' property (no "gap" or "template" here) defines the width of a particular item within a grid container.
+    - The first number ("numerator") is which "line" of the grid the element will begin on, 
+        and the second number (denominator) is which "line" of the grid the element will end on.
+    - A 3 x 3 grid has lines numbered 1, 2, 3, & 4. (does not start at 0.)
+    - In the code below, `grid-column: 2 / 4;` makes .item5 begin at the 2nd line and extend the full length to the 4th line.
+     -->
+
+     <style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          /* add your code below this line */
+          grid-column: 2 / 4;
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>

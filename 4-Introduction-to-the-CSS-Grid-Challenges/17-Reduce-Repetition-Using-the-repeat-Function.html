@@ -1,0 +1,42 @@
+<!-- Learned: 
+    - The 'grid-tepmlate-colomuns' and 'grid-template-rows' properties can be shortened a little,
+        if they have repeating patterns of widths or heights:
+    - a value of 'repeat(5, 9fr 8fr) 60px 40px;'
+        makes 12 columns. the first 10 columns are 9fr, 8fr, 9fr, 8fr, ... well, you can see how tedious that can be, and 
+        that's why repeat tells it to make a 9fr column followed by an 8fr column five times. And then a 60px column followed by a 40px wide one.
+
+    - You can chain repeats together to make consecutive patterns:
+        repeat(3, 40px 30px) repeat(5, 20px)
+
+     -->
+
+     <style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        .item5{background:PaleGreen;}
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          /* change the code below this line */
+          
+          grid-template-columns: repeat(3, 1fr);
+          
+          /* change the code above this line */
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>

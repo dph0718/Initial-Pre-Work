@@ -1,0 +1,46 @@
+<!-- Learned: 
+    - You don't have to have an assigned grid template to assign elements to specific coordinates
+    - The 'grid-area' property can do that, with a value of 'a/c/b/d/'
+        Where:
+        - a = horizontal start
+        - b = horizontal end
+        - c = vertical start 
+        - d = vertical end
+
+    - Vertical lines are counted starting from the bottom and beginning at 1 (it isn't 0 indexed!)
+    - Horizontal lines start where you'd think they would - at the left - and count, starting at 1, to the one furthest right.
+     -->
+
+     <style>
+        .item1{background:LightSkyBlue;}
+        .item2{background:LightSalmon;}
+        .item3{background:PaleTurquoise;}
+        .item4{background:LightPink;}
+        
+        .item5 {
+          background: PaleGreen;
+          /* add your code below this line */
+          grid-area: 3/1/4/4;
+          
+          /* add your code above this line */
+        }
+        
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-gap: 10px;
+        }
+      </style>
+        
+      <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+      </div>
