@@ -6,8 +6,8 @@ import os
 
 '''
 	When making this function more usable, the insert_comment_template_conditional function can be used 
-	to conditionally check for parameters,
-	and whether a match was found.
+	to conditionally check for filename, filesize, file extension
+	and whether a match was found and writing is doable.
 	But since I'm using this to quickly write to my own files, 
 	I know the format of the file names,
 	and so I won't check.
