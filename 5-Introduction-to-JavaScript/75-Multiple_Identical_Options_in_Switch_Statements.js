@@ -1,1 +1,3 @@
-
+/* Learned:
+  - firstwords 
+*/
